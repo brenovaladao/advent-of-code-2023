@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading, spacing: 12) {
                 Text("Advent of code 2023")
                     .font(.title)
 
@@ -38,6 +38,7 @@ struct ContentView: View {
                     Day3.executeExtra(sample: input3())
                 }
             }
+            .padding()
         }
     }
 
@@ -50,6 +51,8 @@ struct ContentView: View {
             Text("Day \(day)")
             Button("Challenge", action: challenge)
             Button("Extra Challenge", action: extra)
+
+            Spacer()
         }
     }
 }
