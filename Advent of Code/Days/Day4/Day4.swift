@@ -70,7 +70,7 @@ enum Day4 {
                 return (winninNumbers, myNumbers)
             }
 
-
+        // initialize all with 1
         var cardAmount = Array(repeating: 1, count: cards.count)
         
         cards.enumerated().forEach {
@@ -86,11 +86,18 @@ enum Day4 {
                 return
             }
 
-            // 1 - 4
+            print("\n\nindex \(index)")
+            print("range \(1...found), total rows: \(cards.count)")
+
+            // where - check if out of bounds for all cards
             for offset in 1...found where offset + index < cards.count {
+                // next row index
                 let newIndex = index + offset
+                print("- newIndex \(offset) + \(index) = \(newIndex)  ||| \(cardAmount[newIndex]) += \(cardAmount[index])")
+                // adds ammount of cards to the next row
                 cardAmount[newIndex] += cardAmount[index]
             }
+            print("- card ammount \(cardAmount)")
         }
 
         print("Day 4-2: \(cardAmount.reduce(0, +))")

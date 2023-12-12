@@ -42,8 +42,9 @@ struct ContentView: View {
                     // Day 4-1: 22193
                     Day4.executeChallenge(sample: input4())
                 } extra: {
+                    Day4.executeExtra()
                     // Day 4-2: 5625994
-                    Day4.executeExtra(sample: input4())
+//                    Day4.executeExtra(sample: input4())
                 }
             }
             .padding()
