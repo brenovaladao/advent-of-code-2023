@@ -7,7 +7,8 @@
 
 import Foundation
 enum Day4 {
-    //  13
+    // 4:1 -> 13
+    // 4:2 -> 30
     static let sampleChallenge = """
     Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53
     Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
@@ -16,6 +17,7 @@ enum Day4 {
     Card 5: 87 83 26 28 32 | 88 30 70 12 93 22 82 36
     Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
     """
+    // 4, 2, 2, 1, 0, 0
 
     static func executeChallenge(sample: String = Self.sampleChallenge) {
         // split lines
@@ -54,10 +56,43 @@ enum Day4 {
         print("Day 4-1: \(result)")
     }
 
-    static let sampleExtra = """
-    """
+    static func executeExtra(sample: String = Self.sampleChallenge) {
+        let cards: [(Set<Int>, [Int])] = sample
+            .splitBreakLines()
+            .map { card in
+                let values = card.split("|")
+                let section = values[0].split(":")
+                let winninNumbers = Set(section[1].split(" ")
+                    .compactMap(Int.init))
+                let myNumbers = values[1]
+                    .split(" ")
+                    .compactMap(Int.init)
+                return (winninNumbers, myNumbers)
+            }
 
-    static func executeExtra(sample: String = Self.sampleExtra) {
 
+        var cardAmount = Array(repeating: 1, count: cards.count)
+        
+        cards.enumerated().forEach {
+            let (index, (winning, myNumbers)) = $0
+            var found = 0
+            for value in myNumbers {
+                if winning.contains(value) {
+                    found += 1
+                }
+            }
+
+            guard found > 0 else {
+                return
+            }
+
+            // 1 - 4
+            for offset in 1...found where offset + index < cards.count {
+                let newIndex = index + offset
+                cardAmount[newIndex] += cardAmount[index]
+            }
+        }
+
+        print("Day 4-2: \(cardAmount.reduce(0, +))")
     }
 }
