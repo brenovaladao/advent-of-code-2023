@@ -9,6 +9,10 @@ import Foundation
 
 extension String {
     func splitBreakLines() -> [String] {
-        split(separator: "\n").map(String.init)
+        split("\n")
+    }
+
+    func split(_ value: String) -> [String] {
+        split(separator: value).map(String.init)
     }
 }
