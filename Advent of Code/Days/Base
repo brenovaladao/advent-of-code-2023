@@ -1,0 +1,15 @@
+enum Day {
+    static let sampleChallenge = """
+    """
+
+    static func executeChallenge(sample: String = Self.sampleChallenge) {
+
+    }
+
+    static let sampleExtra = """
+    """
+
+    static func executeExtra(sample: String = Self.sampleExtra) {
+
+    }
+}

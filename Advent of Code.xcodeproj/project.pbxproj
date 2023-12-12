@@ -15,6 +15,11 @@
 		406661D82B28808C003DCC2A /* Input-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661D72B28808C003DCC2A /* Input-1.swift */; };
 		406661DE2B288221003DCC2A /* Collection+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661DD2B288221003DCC2A /* Collection+convenience.swift */; };
 		406661E02B28826A003DCC2A /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661DF2B28826A003DCC2A /* String+Convenience.swift */; };
+		406661E22B2882E3003DCC2A /* Day2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661E12B2882E3003DCC2A /* Day2.swift */; };
+		406661E42B2882EB003DCC2A /* Input-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661E32B2882EB003DCC2A /* Input-2.swift */; };
+		406661E62B2882F3003DCC2A /* Input-3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661E52B2882F3003DCC2A /* Input-3.swift */; };
+		406661E82B2882FB003DCC2A /* Day3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406661E72B2882FB003DCC2A /* Day3.swift */; };
+		406661EB2B2884C2003DCC2A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 406661EA2B2884C2003DCC2A /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		406661D72B28808C003DCC2A /* Input-1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Input-1.swift"; sourceTree = "<group>"; };
 		406661DD2B288221003DCC2A /* Collection+convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+convenience.swift"; sourceTree = "<group>"; };
 		406661DF2B28826A003DCC2A /* String+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		406661E12B2882E3003DCC2A /* Day2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day2.swift; sourceTree = "<group>"; };
+		406661E32B2882EB003DCC2A /* Input-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Input-2.swift"; sourceTree = "<group>"; };
+		406661E52B2882F3003DCC2A /* Input-3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Input-3.swift"; sourceTree = "<group>"; };
+		406661E72B2882FB003DCC2A /* Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3.swift; sourceTree = "<group>"; };
+		406661EA2B2884C2003DCC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; path = Base; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,7 @@
 		406661BC2B288024003DCC2A /* Days */ = {
 			isa = PBXGroup;
 			children = (
+				406661EA2B2884C2003DCC2A /* Base */,
 				406661CD2B28805D003DCC2A /* Day1 */,
 				406661CF2B288063003DCC2A /* Day2 */,
 				406661D02B288066003DCC2A /* Day3 */,
@@ -119,6 +130,8 @@
 		406661CF2B288063003DCC2A /* Day2 */ = {
 			isa = PBXGroup;
 			children = (
+				406661E12B2882E3003DCC2A /* Day2.swift */,
+				406661E32B2882EB003DCC2A /* Input-2.swift */,
 			);
 			path = Day2;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 		406661D02B288066003DCC2A /* Day3 */ = {
 			isa = PBXGroup;
 			children = (
+				406661E72B2882FB003DCC2A /* Day3.swift */,
+				406661E52B2882F3003DCC2A /* Input-3.swift */,
 			);
 			path = Day3;
 			sourceTree = "<group>";
@@ -210,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40159BFD2B287FE900CB1222 /* Preview Assets.xcassets in Resources */,
+				406661EB2B2884C2003DCC2A /* Base in Resources */,
 				40159BFA2B287FE900CB1222 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +240,13 @@
 				406661DE2B288221003DCC2A /* Collection+convenience.swift in Sources */,
 				40159BF82B287FE800CB1222 /* ContentView.swift in Sources */,
 				406661E02B28826A003DCC2A /* String+Convenience.swift in Sources */,
+				406661E22B2882E3003DCC2A /* Day2.swift in Sources */,
 				406661D62B288080003DCC2A /* Day1.swift in Sources */,
+				406661E62B2882F3003DCC2A /* Input-3.swift in Sources */,
+				406661E82B2882FB003DCC2A /* Day3.swift in Sources */,
 				406661D82B28808C003DCC2A /* Input-1.swift in Sources */,
 				40159BF62B287FE800CB1222 /* AdventOfCodeApp.swift in Sources */,
+				406661E42B2882EB003DCC2A /* Input-2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,9 +15,27 @@ struct ContentView: View {
                     .font(.title)
 
                 makeDay(day: 1) {
+                    // Day 1-1: 55621
                     Day1.executeChallenge(sample: input())
                 } extra: {
+                    // Day 1-2: 53592
                     Day1.executeExtra(sample: input())
+                }
+
+                makeDay(day: 2) {
+                    // Day 2-1: 2720
+                    Day2.executeChallenge(sample: input2())
+                } extra: {
+                    // Day 2-2: 71535
+                    Day2.executeExtra(sample: input2())
+                }
+
+                makeDay(day: 3) {
+                    // Day 3-1: 556057
+                    Day3.executeChallenge(sample: input3())
+                } extra: {
+                    // Day 3-2: 82824352
+                    Day3.executeExtra(sample: input3())
                 }
             }
         }
